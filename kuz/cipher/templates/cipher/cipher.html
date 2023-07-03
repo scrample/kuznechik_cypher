@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Send form</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'cipher/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'cipher/css/style2.css' %}">
+        
+      </head>
+<body>
+
+
+<div id="envelope" class="pulse">
+    <div id="envelope-up"></div>
+    <form id="card" action="" method="POST" enctype="multipart/form-data">
+      <div id="close"></div>
+      <h1>Time for encryption magic </h1>
+      {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit" class="btn btn-primary" id="mailit">Send</button>
+    </form>
+    
+</div>
+<template id="bongo-cat">
+<!-- partial:index.partial.html -->
+<div>
+  <svg id="bongo-cat" xmlns="http://www.w3.org/2000/svg" width="825.7" height="364.41" viewBox="0 0 825.7 364.41">
+    <title>Bongo Cat ai</title>
+    <g id="keybord">
+      <polyline points="620.51 302.63 619.51 314.91 558.02 364.11 227.13 288.66 225.41 272.56" fill="#060515"/>
+      <g>
+        <polyline points="552.15 354.98 554.64 352.96 586.58 328.49 602.68 316.16 618.61 303.95 567.2 291.42 529.87 282.32 383.1 246.55 356.51 240.07 330.46 233.72 296.48 225.44" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+        <polyline points="621.29 302.37 619.17 312.94 557.11 361.71 226.2 285.86 225.41 278.44 554.65 352.67 556.4 359.28" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      </g>
+      <polygon points="224.6 276.81 278.9 221.09 618.61 303.95 554.65 352.67 224.6 276.81" fill="#060515" stroke="#4fe1ca" stroke-linejoin="bevel" stroke-width="5"/>
+      <polyline points="603.71 314.41 555.45 302.94 543.76 300.16 517.38 293.89 513.19 292.89 482.04 285.49 419.86 270.7 369.46 258.72 358.09 256.02 342.48 252.31 317.43 246.36 266.52 233.8" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="587.54 328.72 586.58 328.49 541.05 317.67 527.35 314.41 509.47 310.16 447.92 295.53 435.09 292.48 418.08 288.44 404.33 285.16 385.54 280.7 354.45 273.31 342.11 270.37 323.61 265.98 309.54 262.63 295.36 259.26 251.26 248.34" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="570.34 340.36 528.33 330.37 511.88 326.46 481.25 319.18 465.55 315.48 434.19 308.09 310.19 278.9 238.02 263.03" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="567.2" y1="291.42" x2="555.45" y2="302.94" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="529.87" y1="282.32" x2="516.66" y2="294.55" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="383.09" y1="246.55" x2="369.45" y2="258.72" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="358.45" y1="255.69" x2="342.1" y2="270.38" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="354.45" y1="273.31" x2="342.37" y2="285.93" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="323.6" y1="265.98" x2="309.98" y2="279.11" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="300.03" y1="277.13" x2="283.65" y2="291.09" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="331.88" y1="283.67" x2="313.73" y2="298.45" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="359.77" y1="290.03" x2="343.73" y2="305.74" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="393.09" y1="298.38" x2="375.8" y2="311.82" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="421.19" y1="304.9" x2="405.07" y2="318.96" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="451.55" y1="312.43" x2="436.09" y2="326.23" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="481.24" y1="319.18" x2="465.47" y2="333.74" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="511.88" y1="325.46" x2="495.56" y2="340" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="542.06" y1="334.23" x2="526.69" y2="347.32" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="541.04" y1="317.67" x2="528.33" y2="330.37" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="510.02" y1="309.62" x2="497.13" y2="322.05" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="478.49" y1="302.94" x2="465.47" y2="315.43" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="449" y1="294.55" x2="434.21" y2="308" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="418.08" y1="288.44" x2="404.32" y2="300.04" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="385.54" y1="280.7" x2="373.82" y2="293.64" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="387.6" y1="263.76" x2="373.82" y2="276.94" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="419.85" y1="270.71" x2="404.32" y2="285.17" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="451.55" y1="278.44" x2="435.09" y2="292.48" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="482.04" y1="285.49" x2="466.87" y2="299.15" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="513.19" y1="292.89" x2="497.13" y2="306.68" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="543.76" y1="300.16" x2="527.34" y2="314.41" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M307.33,416.06" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="356.51" y1="240.07" x2="342.1" y2="252.64" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="330.45" y1="233.72" x2="317.42" y2="246.36" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M323.24,364.36" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M311.78,377.48" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="333.6" y1="251.34" x2="319.96" y2="264.24" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="287.43" y1="238.17" x2="271.21" y2="253.49" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="305.81" y1="244.39" x2="290.59" y2="258.71" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M309.44,413.69" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M308.22,360.7" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+    </g>
+    <g id="cat">
+      <path id="body" d="M439.38,266.28c10-7,15-20,26-27,1,0,3,2,4,3,5,9,12,15,17,23,6,3,12,3,19,4,35,8,65,22,95,40,11-5.47,28.13-9,42-9,5,10-4,39-9,49-1,2-2,4-1,6,19,21,27,57,22.44,83.91L322.33,364C336.79,332,406.23,275.47,439.38,266.28Z" transform="translate(-11.74 -135.25)" fill="#060515" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <g id="eyes">
+        <circle id="right-eye" cx="407.72" cy="185.44" r="8.63" fill="#4fe1ca"/>
+        <circle id="left-eye" cx="505.6" cy="217.26" r="8.63" fill="#4fe1ca"/>
+      </g>
+      <path id="mouth" d="M440.54,345.53c1.33,8.7,7.61,9.47,16.67,5,1-.51,2.76-.34,2.83.8,2.07,8.19,10,11,17.9,7.1" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6"/>
+      <line id="table" x1="290.43" y1="224.19" x2="825.15" y2="346.68" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <g id="left-hand-down">
+        <path id="left-hand-down-fill" d="M390,375l-61.65-15.86c-11.88,14.33-6.64,27.65,4.38,32C353,395,374.91,388,390,375Z" transform="translate(-11.74 -135.25)" fill="#060515"/>
+        <path id="left-hand-down-stroke" d="M400.32,372.23c-17.87,10.31-44.44,23.24-65.94,20a17.08,17.08,0,0,1-11-7c-3.78-6.82-3.56-14.21-1.05-21.3.31-.88,2.31-5.36,3.05-6.7,9-14,24.81-29.81,36.23-40.06" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+      </g>
+      <g id="right-hand-up">
+        <g id="paw">
+          <path d="M569.58,392.45c-.45,3.06-.13,5.68,1.68,7.45,4,4.12,10.21.67,10.49-.72.33.35,3.68-5.13,2.27-9.67a9.7,9.7,0,0,0-3.84-5.78C577.61,381.87,569.43,383.09,569.58,392.45Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M591.16,373.56c7.54,2,3.57,10.7-4.41,6.53C583.16,378.13,582.89,371.37,591.16,373.56Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M579.5,371.48c-.72,7.46-11.16,4-7.7-3.5C573.66,364.08,580.16,363.52,579.5,371.48Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M569.12,384.21c-1.3,7.18-12.11,4.11-7.45-3.46C563.58,377.63,569.18,376.8,569.12,384.21Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+        </g>
+        <path id="right-hand-up-stroke" d="M548.88,407.39c7-73.27,48.9-64.71,62.64-17.6" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+      </g>
+      <g id="left-hand-up">
+        <path id="left-hand-up-fill" d="M366.57,334.36l10.81,15.28-32.47,16.72-36.38-7.93-2.25-20.15s1-42.46,35.55-30l11.68,7Z" transform="translate(-11.74 -135.25)" fill="#060515"/>
+        <g id="paw-2" data-name="paw">
+          <path d="M326.57,347.17c.25,3.09,1.19,5.57,3.45,6.89,5.09,3.12,10.6-1.61,10.56-3,.42.27,2.57-5.82.07-9.93a9.94,9.94,0,0,0-5.27-4.78C332.32,335.07,324.24,338.07,326.57,347.17Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M344.24,324c8.18.28,6.14,9.64-3,7.34C337.12,330.19,335.28,323.66,344.24,324Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M331.84,324.52c1,7.43-10.48,6.39-8.7-1.71C324.15,318.6,330.66,316.62,331.84,324.52Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+          <path d="M324.18,339.24c.35,7.29-11.42,6.69-8.41-1.73C317,334.05,322.52,332,324.18,339.24Z" transform="translate(-11.74 -135.25)" fill="#ffa0cb"/>
+        </g>
+        <path id="left-hand-up-stroke" d="M308.81,359.65c-13.72-58.82,31.72-72.61,57.76-26.14" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+      </g>
+      <g id="right-hand-down">
+        <polygon id="right-hand-down-fill" points="525.85 269.92 610.21 280.74 534.92 312.92 514.55 302.58 521.78 273.25 525.85 269.92" fill="#060515"/>
+        <path id="right-hand-down-stroke" d="M615.45,416.42c-11.62,1.16-20.47,8.82-20.47,8.82-55.6,37.62-86,16.57-51.36-27.86" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+      </g>
+    </g>
+    <g id="computer">
+      <polygon points="11 10.87 24.41 1.34 315.35 92.05 286.81 300.44 153.87 261.31 150.87 298.89 219.19 327.98 168.15 361.7 46.26 315.67 90.51 284.03 113.79 287.85 118.55 247.49 2.72 207.74 11 10.87" fill="#060515"/>
+      <polygon points="305.13 99.65 280.01 300.42 2.58 208.05 11.21 11.68 305.13 99.65" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="10.26 10.4 23.79 2.71 313.49 90.85 304.69 99.52" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="280.38 301.84 289.16 293.92 315.96 89.51" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="149.2 300.95 214.74 322.88 169.3 351 167.85 350.51 50.16 310.62 93.56 282.34 113.27 288.93" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="46.95 310.85 48.48 319.29 168.74 360.51 217.53 332.03 217.78 322.13" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <path d="M180.29,486.17" transform="translate(-11.74 -135.25)" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <line x1="168.92" y1="360.95" x2="169.51" y2="350.6" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polygon points="117.52 247.42 111.61 317.65 135.88 326.98 142.95 256.6 117.52 247.42" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+      <polyline points="153.33 258.31 146.84 318.68 136.17 328.66" fill="none" stroke="#4fe1ca" stroke-miterlimit="10" stroke-width="5"/>
+    </g>
+  </svg>
+  <h3>Work on your image, plase wait...</h3>
+  
+  </div>
+  <script  src="{% static 'cipher/js/script1.js' %}"></script>
+  <!-- partial -->
+</template>
+
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script> -->
+<script  src="{% static 'cipher/js/script.js' %}"></script>
+<script  src="{% static 'cipher/js/script1.js' %}"></script>
+
+<div class="image-link">
+  <p><a href="{% url 'images' %}" title="">Images</a></p>
+</div>
+
+</body>
+</html>

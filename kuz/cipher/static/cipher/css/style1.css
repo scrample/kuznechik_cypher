@@ -1,0 +1,84 @@
+html {
+  font-size: 1vw;
+}
+
+body {
+  background: #222;
+  font-family: sans-serif;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+h1,
+h2 {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3vw;
+  margin-bottom: 1.5rem;
+  line-height: 1vw;
+}
+
+h2 {
+  font-size: 2vw;
+  margin-bottom: 4rem;
+}
+
+.image-viewer {
+  display: inline-grid;
+  grid-template-columns: 212px 212px 212px 212px;
+  grid-gap: 30px;
+  width: auto;
+}
+.image-viewer .image-container span {
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+  color: grey;
+}
+.image-viewer .image-container span b {
+  color: white;
+}
+.image-viewer .image-container img {
+  width: 100%;
+  box-shadow: 0.25rem 0.25rem 1rem #000;
+}
+.image-viewer .image-container p {
+  text-align: center;
+}
+
+a {
+  color: grey;
+  font-size: 1.5vw;
+  display: block;
+  text-align: center;
+  margin-top: 1.5em;
+}
+.title{
+  align-items: center;
+  
+}
+
+.title p{
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 100%) {
+  .image-viewer {
+    grid-template-columns: 212px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 100%) {
+  html {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 100%) {
+  html {
+    font-size: 3vw;
+  }
+}

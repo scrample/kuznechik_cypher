@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cipher/css/style1.css' %}">
+    <title>Images</title>
+</head>
+<body>
+    <p><a href="{% url 'home' %}" title="">Home</a></p>
+    <!-- {% for img in images %}
+    <p>                       IMG                     </p>
+    <p>-----------------------------------------------</p>
+        <p><b>TITLE</b></p>
+        
+        <p><b>VARIATION</b></p>
+        {{ img.alg_var }}
+        <p>original</p>
+        <img src="{{ img.original_img.url }}" alt="">
+        <p>encode</p>
+        <img src="{{ img.enc_img.url }}" alt="">
+        <p>decode</p>
+        <img src="{{ img.dec_img.url }}" alt="">
+        <p>-----------------------------------------------</p>
+        
+    {% endfor %} -->
+
+
+    <h1>Images</h1>
+    <div class="image-viewer">
+        {% for img in images %}
+        <div class="title">
+            <p style="margin-top: 5em;">Name</p>
+            <p>{{ img.title }}</p> 
+            <p>Algorithm</p>
+            <p>{{ img.alg_var }}</p>
+        </div>
+        <div class="image-container">
+            <p>original</p>
+            <img src="{{ img.original_img.url }}" alt="">
+        </div>
+        <div class="image-container">
+            <p>encode</p>
+            <img src="{{ img.enc_img.url }}" alt="">
+        </div>
+        <div class="image-container">
+            <p>decode</p>
+            <img src="{{ img.dec_img.url }}" alt="">
+        </div>
+        {% endfor %}
+    </div>	
+</body>
+</html>
